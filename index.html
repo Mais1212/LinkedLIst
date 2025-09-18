@@ -21,11 +21,17 @@
     <li><a href="product.html?id=123">Ссылка с параметром id в URL</a></li>
     <li><a href="contact.html">Относительная на страницу в текущем каталоге (contact.html)</a></li>
     <li><a href="about/team.html">Относительная на страницу в каталоге about (about/team.html)</a></li>
-    <li><a href="../parent.html">Относительная на страницу уровнем выше</a></li>
-    <li><a href="../../grandparent.html">Относительная на страницу двумя уровнями выше</a></li>
+    <li><a href="./ ">Относительная на страницу уровнем выше</a></li>
+    <li><a href="../../">Относительная на страницу двумя уровнями выше</a></li>
     <li><p>В тексте абзаца встречается <a href="https://kubsu.ru">контекстная ссылка</a> на сайт.</p></li>
     <li><a href="https://example.com/page.html#fragment">Ссылка на фрагмент стороннего сайта</a></li>
-    <li><img src="picture.jpg" usemap="#map1" alt="Изображение с картой"></li>
+    <li>
+      <img src="static/cats.jpg" usemap="#map1" style="width: 200px; alt="Изображение с картой">
+      <map name="map1">
+                <area shape="rect" coords="0,0,50,50" href="https://www.youtube.com/" alt="Прямоугольная область">
+                <area shape="circle" coords="100,50,25" href="https://kubsu.ru" alt="Круглая область">
+      </map>
+    </li>
     <li><a href="">Ссылка с пустым href</a></li>
     <li><a>Ссылка без href</a></li>
     <li><a href="nofollow-target.html" rel="nofollow">Ссылка, по которой запрещён переход поисковикам</a></li>
