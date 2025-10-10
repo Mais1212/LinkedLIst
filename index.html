@@ -51,57 +51,60 @@
     <area shape="circle" coords="150,75,40" href="https://example.com" alt="Круглая область">
   </map>
 
-  <h2 id="section1">Форма регистрации</h2>
-  <form action="submit.php" method="post">
-    <div>
-      <label for="fullname">ФИО</label>
-      <input type="text" id="fullname" name="fullname" required>
-    </div>
-    <div>
-      <label for="phone">Телефон</label>
-      <input type="tel" id="phone" name="phone" required>
-    </div>
-    <div>
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-      <label for="birth">Дата рождения</label>
-      <input type="date" id="birth" name="birth">
-    </div>
-    <fieldset>
-      <legend>Пол</legend>
-      <div>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Мужской</label>
+      <h2 id="section1">Форма регистрации</h2>
+      <form action="submit.php" method="post">
+        <div>
+          <label for="fullname">ФИО</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div>
+          <label for="phone" >Телефон</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="birth">Дата рождения</label>
+          <input type="date" id="birth" name="birth" required>
+        </div>
+        <fieldse>
+          <legend>Пол</legend>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Мужской</label>
+          </div>
+          <div>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Женский</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="languages">Любимый язык программирования (множественный выбор)</label>
+          <select id="languages" name="languages[]" multiple size="6">
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Golang">Golang</option>
+            <option value="Ruby">Ruby</option>
+          </select>
+        </div>
+        <div>
+          <label for="bio">Биография</label>
+          <textarea id="bio" name="bio" rows="6" required></textarea>
+        </div>
+        <div>
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">С контрактом ознакомлен(а)</label>
+        </div>
+        <div>
+          <button type="submit">Сохранить</button>
+        </div>
+      </form>
       </div>
-      <div>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Женский</label>
-      </div>
-    </fieldset>
-    <div>
-      <label for="languages">Любимый язык программирования (множественный выбор)</label>
-      <select id="languages" name="languages[]" multiple size="6">
-        <option value="Pascal">Pascal</option>
-        <option value="C">C</option>
-        <option value="C++">C++</option>
-        <option value="JavaScript">JavaScript</option>
-        <option value="PHP">PHP</option>
-        <option value="Python">Python</option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Биография</label>
-      <textarea id="bio" name="bio" rows="6" required></textarea>
-    </div>
-    <div>
-      <input type="checkbox" id="agree" name="agree">
-      <label for="agree">С контрактом ознакомлен(а)</label>
-    </div>
-    <div>
-      <button type="submit">Сохранить</button>
-    </div>
-  </form>
 </body>
 </html>
